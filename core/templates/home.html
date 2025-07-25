@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block title %}
+  Home - Nadav Vitri | Software Engineer | Personal Website
+{% endblock %}
+{% block content %}
+  <h1>Hey! 👋 I’m Nadav Vitri</h1>
+  <p>
+    <br />
+    I began my career in 2019, focusing on backend engineering — although I’ve been into computers since I was a kid 😊.
+    <br /><br />
+    I enjoy solving real-world problems through clean, efficient code and take pride in constantly learning and improving as a developer. Whether it’s exploring a new technology, optimizing performance, or mentoring others, I’m always looking for ways to grow.
+    <br /><br />
+    This site is a small personal project to learn Django — and a space to share what I’m exploring along the way.
+    <br /><br />
+    You can even check out the <a href="">source code</a> if you're curious.
+  </p>
+  <a class="cta" href="{% url 'cv' %}">Learn more about me</a>
+{% endblock %}
