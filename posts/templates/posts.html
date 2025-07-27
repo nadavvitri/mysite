@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}
+  Posts - Nadav Vitri | Software Engineer | Personal Website
+{% endblock %}
+{% block content %}
+{% for post in posts %}
+<a href="{{ post.slug }}"><h1>{{ post.title }}</h1></a>
+<p>{{ post.created_at }}</p>
+{% endfor %}
+{% endblock %}
