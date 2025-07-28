@@ -1,3 +1,8 @@
+img {
+  width: 24px;
+  height: auto;
+}
+
 a {
   color: #ede959;
   text-decoration: none;
@@ -11,7 +16,7 @@ a:hover {
 body {
   background-color: #121212;
   color: #96ded5;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 0 15rem;
 }
