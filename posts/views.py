@@ -3,7 +3,7 @@ from datetime import datetime
 from .models import Post
 
 def posts(request):
-    posts = Post.objects.filter(is_published=False).order_by('-created_at')
+    posts = Post.objects.filter(is_published=True).order_by('-created_at')
     context = {
         'posts': posts,
         'year': datetime.now().year
