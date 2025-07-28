@@ -1,14 +1,14 @@
-# 🧑‍💻 Nadav Vitri — Personal Website
+# Nadav Vitri personal website
 
-## 📝 Introduction
+## Introduction
 
-This personal website is a small project I built to practice my skills with Django and Python — for fun, learning, and as a place to share my journey and things I enjoy.
+This personal website is a small project I built to practice my skills with Django and Python - for fun, learning, and as a place to share my journey and things I enjoy.
 
 ![Homepage Screenshot](static/images/screenshot-home.png)
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 Here’s a simplified structure of the project:
 
@@ -21,14 +21,14 @@ my_site/
 ├── manage.py
 ```
 
-### 📦 Apps
+### Apps
 
 - **core** – Handles static pages like the homepage, CV, and reading list.
 - **posts** – Manages blog posts created by me via the Django admin panel.
 
 ---
 
-## ✍️ Posts and Content
+## Posts and Content
 
 Posts are powered by two models:
 
@@ -39,9 +39,10 @@ Posts are powered by two models:
   - Linked to posts to store optional files (one post to many attachments)
 
 All posts are created through the Django admin panel for simplicity.
+Post content is rendered as Markdown by adding custom markdown filter.
 
 ---
 
-## 📂 License
+## License
 
 MIT — feel free to fork and build your own
