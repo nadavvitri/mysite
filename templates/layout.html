@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
-    <header>
-      <h1><a href="{% url 'home' %}">Nadav Vitri</a></h1>
-      <nav>
-        <a href="{% url 'cv' %}">📄 CV</a>
-        <a href="{% url 'reading' %}">📚 Reading & Learning</a>
-        <a href="{% url 'posts' %}">📰 Posts</a>
-      </nav>
-    </header>
-    {% block content %} {% endblock %}
-    <footer>
-      <p>© {{ year }} Nadav Vitri</p>
-    </footer>
+    <div class="container">
+      <header>
+        <h1><a href="{% url 'home' %}">Nadav Vitri</a></h1>
+        <nav>
+          <a href="{% url 'cv' %}">📄 CV</a>
+          <a href="{% url 'reading' %}">📚 Reading & Learning</a>
+          <a href="{% url 'posts' %}">📰 Posts</a>
+        </nav>
+      </header>
+      {% block content %} {% endblock %}
+      <footer>
+        <p>© {{ year }} Nadav Vitri</p>
+      </footer>
+    </div>
   </body>
 </html>
